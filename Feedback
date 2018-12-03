@@ -1,0 +1,9 @@
+10.27
+HW3 - it's a long one, but you have a good start
+P1 - I think you have a bit more to do, you have the right energy behavior for the cycles
+P2 - You still have a bit more to do here to - mainly how the period varies with the initial conditions
+P3 - All your phase diagrams look great, but I would take another look at how you're calculating the period in the damped/undamped cases, you should find a difference.
+P4 - I think you have some big issues with this one. I don't think any of the graphs for the driven pendulum are correct.
+P5 - You have the program structured, but now you just need to modify your base pendulummodified2 code because, I'm not seeing any resonance appear here?
+p6 - The animations look good, but I would be careful with your reasoning - just because the time in the Al simulation was shorter then in the Fe simulation doesn't mean that the Al cools faster. What determines your simulation time?
+P7 - looks good.
