@@ -2,7 +2,7 @@
 %relative change in the total energy during one cycle and is the function
 %"delta" uniformly small during the cycle? choose theta0 = 0.25 and its
 %derivative = 0 and omega0^2=9
-function [period,sol]= Pendulummodified(R,theta0,thetad0,grph) 
+function [period,sol]= pendulummodified(R,theta0,thetad0,grph) 
 %kenergy,penergy,totenergy]
 
 %given values omega0 = 3, theta0 = 0.25 and dertheta = 0
@@ -67,7 +67,7 @@ totenergy = kenergy + penergy;
 energy0 = 0.5*(R*thetad0).^2 + g*R*(1-cos(theta0));
 denergy = (totenergy(:) - energy0)./energy0;
 delta = atan(theta0/(omega*thetad0)); %atan: Inverse tangent in radians
-y = theta0*sin(omega*t+delta); 
+y = theta0*sin(omega0*t+delta); 
 
 
 % Small-angle approximation solution
@@ -99,28 +99,28 @@ if grph
     
     figure
     subplot(2,1,1)
-    plot(t(ind(1):ind(3)),denergy,'c*')
+    plot(t(ind(1):ind(3)),dE,'m:')
     title('Total Energy during one cycle')
     xlabel('t')
     ylabel('\Deltan')
     
     figure
     subplot(2,1,1)
-    plot(t,w(:,1),'m')
+    plot(t,w(:,1))
     title('Position VS Time')
     xlabel('t')
     ylabel('\theta')
     
     figure
     subplot(2,1,1)
-    plot(t,w(:,2),'m')
+    plot(t,w(:,2))
     title('Velocity VS Time')
     xlabel('t')
     ylabel('d\theta /dt')
     
     figure 
     subplot(2,1,1)
-    plot(w(:,1),w(:,2),'g')
+    plot(w(:,1),w(:,2))
     title('Phase Space')
     xlabel('theta')
     ylabel('d\theta /dt')
