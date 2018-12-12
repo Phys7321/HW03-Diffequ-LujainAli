@@ -7,3 +7,8 @@ P4 - I think you have some big issues with this one. I don't think any of the gr
 P5 - You have the program structured, but now you just need to modify your base pendulummodified2 code because, I'm not seeing any resonance appear here?
 p6 - The animations look good, but I would be careful with your reasoning - just because the time in the Al simulation was shorter then in the Fe simulation doesn't mean that the Al cools faster. What determines your simulation time?
 P7 - looks good.
+12.11
+Seeing good progess. General note: include a title to any graph that you produce so that you can look back and know what the deal is with that graph.
+P2/P3 - I still think that you are calculating the period incorrectly here. Oh, I see, you're not solving the exact pendulum, that's the problem.
+P4 - the phase calculations seem more on the order of the right answer.
+I don't see any new work on P5.
